@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment-6</title>
+<style>
+p{
+color: royalblue;
+}
+</style>
+</head>
+<body>
+<fieldset>
+<legend>Details</legend>
+Name:<input type="text" id="uname" required><br/><br/>
+Aadhar Number:<input type="number" id="aadhar"required><br/><br/>
+Address:<input type="text" id="address"><br/><br/>
+<button onclick="readData()">Submit</button>
+</fieldset></br></br>
+<h1>Result Table</h1>
+<table border="1">
+<tr>
+<th>Name</th>
+<th>Aadhar Number</th>
+<th>Address</th>
+</tr>
+<tr>
+<td id="abc">not yet read</td>
+<td id="123">not yet read</td>
+<td id="def">not yet read</td>
+</tr>
+<script>
+function readData(){
+var a=document.getElementById('uname').value;
+var b=document.getElementById('aadhar').value;
+var c=document.getElementById('address').value;
+document.getElementById('abc').innerHTML=a;
+document.getElementById('123').innerHTML=b;
+document.getElementById('def').innerHTML=c;
+
+}
+</script>
+</body>
+</html>
